@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 23 Aug, 2022 10:48:46 AM by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.model.person_info" table="PERSON_INFO">
+        <id name="id" type="int">
+            <column name="ID" />
+            <generator class="increment" />
+        </id>
+        <property name="person_name" type="java.lang.String">
+            <column name="PERSON_NAME" />
+        </property>
+        <property name="person_mobile" type="java.lang.String">
+            <column name="PERSON_MOBILE" />
+        </property>
+        <property name="person_email" type="java.lang.String">
+            <column name="PERSON_EMAIL" />
+        </property>
+    </class>
+</hibernate-mapping>
